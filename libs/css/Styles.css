@@ -1,0 +1,23 @@
+html{
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: url(../../imgs/back.jpg);
+  background-size: cover;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+header{
+  width: 100%;
+  position: relative;
+}
+
+#Principal{
+  margin:auto;
+  width: 1024px;
+}

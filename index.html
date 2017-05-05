@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="libs/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+    <script type="text/javascript" src="libs/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" href="libs/bootstrap-datepicker/css/bootstrap-datepicker.css">
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="libs/css/Styles.css">
+    <script type="text/javascript" src="libs/js/tools.js"></script>
+    <script type="text/javascript" src="libs/js/app.js"></script>
+
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <div id="Principal">
+      <div id="Escuela" class="">
+
+      </div>
+      <div id="Alumno" class="panel panel-default table-responsive">
+        <div class="panel-heading">
+          <h3 class="panel-title">Datos del Alumno</h3>
+        </div>
+        <div class="panel-body">
+          <table class="table">
+            <tr>
+              <td>
+                Nombre:
+              </td>
+              <td>
+                <input id="tAPaterno_Alumno" type="text" placeholder="Apellido Paterno" class="form-control">
+              </td>
+              <td>
+                <input id="tAMaterno_Alumno" type="text" placeholder="Apellido Materno" class="form-control">
+              </td>
+              <td>
+                <input id="tNombres_Alumno" type="text" placeholder="Nombre(s)" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Nacimiento:
+              </td>
+              <td>
+                <input id="tFecNac_Alumno" type="text" placeholder="Fecha" class="form-control">
+              </td>
+              <td>
+                <input id="tLugarNac_Alumno" type="text" value="" placeholder="Lugar" class="form-control">
+              </td>
+              <td>
+                <input id="tCURP_Alumno" type="text" value="" placeholder="CURP del alumno" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Dirección
+              </td>
+              <td colspan="2">
+                <input id="tCalle_Alumno" type="text" name="name" placeholder="Calle" class="form-control">
+              </td>
+              <td>
+                <input id="tNum_Alumno" type="text" placeholder="#" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Entre calles
+              </td>
+              <td colspan="3">
+                <input id="tEntreCAlles_Alumno" name="name" placeholder="Entre calles" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Colonia:
+              </td>
+              <td colspan="3">
+                  <input id="tColonia_Alumno" type="text" name="name" placeholder="Colonia" class="form-control">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Localidad
+              </td>
+              <td>
+                <input id="tLocalidad_Alumno" type="text" placeholder="Localidad" class="form-control">
+              </td>
+              <td>
+                Código Postal:
+              </td>
+              <td>
+                <input id="tCP_Alumno" type="text" placeholder="Código Postal" class="form-control">
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <h2>Integrantes de la Familia</h2>
+      <div class="form-group table-responsive">
+        <h3>Datos del Padre</h3>
+        <table class="table">
+          <tr>
+            <td>
+              Nombre:
+            </td>
+            <td>
+              <input id="tAPaterno_Padre" type="text" placeholder="Apellido Paterno" class="form-control">
+            </td>
+            <td>
+              <input id="tAMaterno_Padre" type="text" placeholder="Apellido Materno" class="form-control">
+            </td>
+            <td>
+              <input id="tNombres_Padre" type="text" placeholder="Nombre(s)" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Nacimiento:
+            </td>
+            <td>
+              <input id="tFecNac_Padre" type="Date" placeholder="Fecha" class="form-control">
+            </td>
+            <td>
+              CURP:
+            </td>
+            <td>
+              <input id="tCURP_Padre" type="text" value="" placeholder="CURP del padre" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Dirección:
+            </td>
+            <td colspan="2">
+              <input id="tCalle_Padre" type="text" name="name" placeholder="Calle" class="form-control">
+            </td>
+            <td>
+              <input id="tNum_Padre" type="text" placeholder="#" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Entre calles
+            </td>
+            <td colspan="3">
+              <input id="tEntreCAlles_Padre" name="name" placeholder="Entre calles" class="form-control" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Colonia:
+            </td>
+            <td colspan="3">
+                <input id="tColonia_Padre" type="text" name="name" placeholder="Colonia" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Localidad
+            </td>
+            <td>
+              <input id="tLocalidad_Padre" type="text" placeholder="Localidad" class="form-control">
+            </td>
+            <td>
+              Código Postal:
+            </td>
+            <td>
+              <input id="tCP_Padre" type="text" placeholder="Código Postal" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              E-mail:
+            </td>
+            <td colspan="3">
+              <input id="tMail_Padre" type="email" placeholder="E-mail" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>
+              Estado civil:
+            </td>
+            <td>
+              Ocupación:
+            </td>
+            <td>
+              Escolaridad
+            </td>
+            <td>
+
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <input type="radio" name="EdoCivil_Padre" value="S">Soltero<br>
+              <input type="radio" name="EdoCivil_Padre" value="C">Casado<br>
+              <input type="radio" name="EdoCivil_Padre" value="D">Divorciado<br>
+              <input type="radio" name="EdoCivil_Padre" value="V">Viudo<br>
+              <input type="radio" name="EdoCivil_Padre" value="U">Unión libre<br>
+            </td>
+            <td>
+              <input type="radio" name="Ocupacion_Padre" value="Hogar">Hogar<br>
+              <input type="radio" name="Ocupacion_Padre" value="Estudiante">Estudiante<br>
+              <input type="radio" name="Ocupacion_Padre" value="Autonomo">Cuenta Propia<br>
+              <input type="radio" name="Ocupacion_Padre" value="Empleado">Empleado<br>
+              <input type="radio" name="Ocupacion_Padre" value="Desempleado">Desempleado<br>
+              <input type="radio" name="Ocupacion_Padre" value="Jubilado">Jubilado<br>
+              <input type="radio" name="Ocupacion_Padre" value="Otro">Otro<br>
+            </td>
+            <td>
+              <input type="radio" name="Escolaridad_Padre" value="N">Ninguna<br>
+              <input type="radio" name="Escolaridad_Padre" value="P">Primaria<br>
+              <input type="radio" name="Escolaridad_Padre" value="S">Secundaria<br>
+              <input type="radio" name="Escolaridad_Padre" value="B">Bachillerato<br>
+              <input type="radio" name="Escolaridad_Padre" value="L">Profesional<br>
+              <input type="radio" name="Escolaridad_Padre" value="T">Técnico<br>
+              <input type="radio" name="Escolaridad_Padre" value="T">Postgrado<br>
+              <input type="radio" name="Escolaridad_Padre" value="O">Otro<br>
+            </td>
+            <td>
+
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="form-group table-responsive">
+        <h3>Datos de la Madre</h3>
+        <table class="table">
+          <tr>
+            <td>
+              Nombre:
+            </td>
+            <td>
+              <input id="tAPaterno_Madre" type="text" placeholder="Apellido Paterno" class="form-control">
+            </td>
+            <td>
+              <input id="tAMaterno_Madre" type="text" placeholder="Apellido Materno" class="form-control">
+            </td>
+            <td>
+              <input id="tNombres_Madre" type="text" placeholder="Nombre(s)" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Nacimiento:
+            </td>
+            <td>
+              <input id="tFecNac_Madre" type="Date" placeholder="Fecha" class="form-control">
+            </td>
+            <td>
+              CURP:
+            </td>
+            <td>
+              <input id="tCURP_Madre" type="text" value="" placeholder="CURP de la madre" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Dirección:
+            </td>
+            <td colspan="2">
+              <input id="tCalle_Madre" type="text" name="name" placeholder="Calle" class="form-control">
+            </td>
+            <td>
+              <input id="tNum_Madre" type="text" placeholder="#" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Entre calles
+            </td>
+            <td colspan="3">
+              <input id="tEntreCAlles_Madre" name="name" placeholder="Entre calles" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Colonia:
+            </td>
+            <td colspan="3">
+                <input id="tColonia_Madre" type="text" name="name" placeholder="Colonia" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Localidad
+            </td>
+            <td>
+              <input id="tLocalidad_Madre" type="text" placeholder="Localidad" class="form-control">
+            </td>
+            <td>
+              Código Postal:
+            </td>
+            <td>
+              <input id="tCP_Madre" type="text" placeholder="Código Postal" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              E-mail:
+            </td>
+            <td colspan="3">
+              <input id="tMail_Madre" type="email" placeholder="E-mail" class="form-control">
+            </td>
+          </tr>
+          <tr>
+            <td></td><td></td><td></td><td></td>
+          </tr>
+          <tr>
+            <td>
+              Estado civil:
+            </td>
+            <td>
+              Ocupación:
+            </td>
+            <td>
+              Escolaridad
+            </td>
+            <td>
+
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>
+              <input type="radio" name="EdoCivil_Madre" value="S">Soltero<br>
+              <input type="radio" name="EdoCivil_Madre" value="C">Casado<br>
+              <input type="radio" name="EdoCivil_Madre" value="D">Divorciado<br>
+              <input type="radio" name="EdoCivil_Madre" value="V">Viudo<br>
+              <input type="radio" name="EdoCivil_Madre" value="U">Unión libre<br>
+            </td>
+            <td>
+              <input type="radio" name="Ocupacion_Madre" value="Hogar">Hogar<br>
+              <input type="radio" name="Ocupacion_Madre" value="Estudiante">Esdtudiante<br>
+              <input type="radio" name="Ocupacion_Madre" value="Autonomo">Cuenta Propia<br>
+              <input type="radio" name="Ocupacion_Madre" value="Empleado">Empleado<br>
+              <input type="radio" name="Ocupacion_Madre" value="Desempleado">Desempleado<br>
+              <input type="radio" name="Ocupacion_Madre" value="Jubilado">Jubilado<br>
+              <input type="radio" name="Ocupacion_Madre" value="Otro">Otro<br>
+            </td>
+            <td>
+              <input type="radio" name="Escolaridad_Madre" value="N">Ninguna<br>
+              <input type="radio" name="Escolaridad_Madre" value="P">Primaria<br>
+              <input type="radio" name="Escolaridad_Madre" value="S">Secundaria<br>
+              <input type="radio" name="Escolaridad_Madre" value="B">Bachillerato<br>
+              <input type="radio" name="Escolaridad_Madre" value="L">Profesional<br>
+              <input type="radio" name="Escolaridad_Madre" value="T">Técnico<br>
+              <input type="radio" name="Escolaridad_Madre" value="T">Postgrado<br>
+              <input type="radio" name="Escolaridad_Madre" value="O">Otro<br>
+            </td>
+            <td>
+
+            </td>
+          </tr>
+        </table>
+      </div>
+  </div>
+  </body>
+</html>
